@@ -1,0 +1,17 @@
+CREATE TABLE bet_id(
+	id INT,
+	room_type VARCHAR,
+	room_id VARCHAR,
+	price VARCHAR,
+	book_date DATE,
+	book_time VARCHAR,
+	member_id VARCHAR,
+	date_time DATE,
+	min_book VARCHAR,
+	pay_status TEXT
+);
+
+
+COPY bet_id FROM 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\PostgreSQL 14\Documentation\files\challenge3.csv' DELIMITER ',' csv header;
+
+SELECT * FROM bet_id
